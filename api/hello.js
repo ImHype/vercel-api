@@ -1,4 +1,5 @@
-module.exports = (req, res) => {
-    const { name = 'World1' } = req.query
-    res.send(`Hello ${name}!`)
-}
+http.createServer(
+    (req, res) => {
+        res.end('hello')
+    }
+).listen(3000)
